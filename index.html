@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Chess</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="game-container">
+            <div class="side-panel">
+                <div class="timer-container">
+                    <div>
+                        <span>White</span>
+                        <span id="white-timer">10:00</span>
+                    </div>
+                    <div>
+                        <span>Black</span>
+                        <span id="black-timer">10:00</span>
+                    </div>
+                </div>
+                
+                <div class="controls">
+                    <button id="aiMode">vs AI</button>
+                    <button id="multiplayerMode">2 Players</button>
+                    <button id="undoBtn">Undo Move</button>
+                    <button id="resetBtn">New Game</button>
+                </div>
+
+                <div>
+                    <h3>Captured Pieces</h3>
+                    <div id="player1-captured" class="captured-pieces"></div>
+                    <div id="player2-captured" class="captured-pieces"></div>
+                </div>
+
+                <div>
+                    <h3>Move History</h3>
+                    <div id="move-history" class="move-history"></div>
+                </div>
+            </div>
+
+            <div class="main-panel">
+                <div id="status-message">Select game mode to begin</div>
+                <div id="chessboard"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
